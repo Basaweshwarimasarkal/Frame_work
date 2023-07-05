@@ -21,7 +21,7 @@ public class Base_test  implements Framework_const1 {
 		driver.manage().window().maximize();
 		//maximizing the window
 		driver.get(base_url);
-		//url is written
+		
 		
 	}
 	@AfterMethod
@@ -31,7 +31,8 @@ public class Base_test  implements Framework_const1 {
 		{
 			Generic_tss.getphoto(driver);
 		}
-		driver.close();
+		driver.close();//closes the app
 	}
+	
 
 }
