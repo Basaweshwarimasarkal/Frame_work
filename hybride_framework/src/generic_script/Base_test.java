@@ -15,9 +15,13 @@ public class Base_test  implements Framework_const1 {
 	public void Openapp() throws InterruptedException
 	{
 		System.setProperty(chrome_key,chrome_value);
+		//key and value is specified.
 		driver=new ChromeDriver();
+		//launch the browser
 		driver.manage().window().maximize();
+		//maximizing the window
 		driver.get(base_url);
+		//baseurl
 		
 	}
 	@AfterMethod
@@ -27,7 +31,8 @@ public class Base_test  implements Framework_const1 {
 		{
 			Generic_tss.getphoto(driver);
 		}
-		driver.close();
+		driver.close();//closes the app
 	}
+	
 
 }
