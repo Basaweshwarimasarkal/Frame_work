@@ -15,6 +15,7 @@ public class Base_test  implements Framework_const1 {
 	public void Openapp() throws InterruptedException
 	{
 		System.setProperty(chrome_key,chrome_value);
+		//key and value is specified.
 		driver=new ChromeDriver();
 		//launch the browser
 		driver.manage().window().maximize();
